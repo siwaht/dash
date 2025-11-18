@@ -21,3 +21,22 @@ dist-ssr
 *.sln
 *.sw?
 .env
+.env.local
+.env.production.local
+.env.development.local
+.env.test.local
+
+# Build outputs
+build/
+.next/
+out/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+.cache
+.parcel-cache
+.eslintcache
+*.tsbuildinfo

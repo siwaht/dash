@@ -36,7 +36,7 @@ export default function Footer({ onOpenPrivacy }: FooterProps) {
 
               <div className="flex gap-4">
                 <a
-                  href=""
+                  href="https://www.linkedin.com/company/agentx"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 min-w-[48px] min-h-[48px] rounded-xl bg-gradient-to-br from-light-primary/90 to-light-secondary/90 dark:from-dark-tertiary/90 dark:to-dark-secondary/90 backdrop-blur-md border-2 border-brand-slate-light/30 dark:border-brand-slate/30 flex items-center justify-center hover:border-brand-teal-mid hover:scale-110 hover:bg-gradient-to-br hover:from-brand-teal-mid/20 hover:to-brand-emerald-mid/20 transition-all duration-300 group shadow-elevation-1 hover:shadow-elevation-2"
@@ -45,7 +45,7 @@ export default function Footer({ onOpenPrivacy }: FooterProps) {
                   <Linkedin className="w-5 h-5 text-brand-blue-mid group-hover:text-brand-teal-mid transition-all duration-300" />
                 </a>
                 <a
-                  href=""
+                  href="https://www.instagram.com/agentx"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 min-w-[48px] min-h-[48px] rounded-xl bg-gradient-to-br from-light-primary/90 to-light-secondary/90 dark:from-dark-tertiary/90 dark:to-dark-secondary/90 backdrop-blur-md border-2 border-brand-slate-light/30 dark:border-brand-slate/30 flex items-center justify-center hover:border-brand-teal-mid hover:scale-110 hover:bg-gradient-to-br hover:from-brand-teal-mid/20 hover:to-brand-emerald-mid/20 transition-all duration-300 group shadow-elevation-1 hover:shadow-elevation-2"
