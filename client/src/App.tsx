@@ -2,9 +2,12 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import HowItWorks from "./components/HowItWorks";
+import Features from "./components/Features";
 import AIAdvisory from "./components/AIAdvisory";
 import AgenticTransformation from "./components/AgenticTransformation";
 import Solutions from "./components/Solutions";
+import AGUISection from "./components/AGUISection";
 import WorkflowSection from "./components/WorkflowSection";
 import Industries from "./components/Industries";
 import CaseStudies from "./components/CaseStudies";
@@ -31,9 +34,12 @@ function App() {
           <Header />
           <main id="main-content" role="main">
             <Hero />
+            <HowItWorks />
+            <Features />
             <AIAdvisory />
             <AgenticTransformation />
             <Solutions />
+            <AGUISection />
             <WorkflowSection />
             <Industries />
             <CaseStudies />

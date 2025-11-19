@@ -21,47 +21,29 @@ export default function Header() {
           <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
             <li>
               <a
-                href="#ai-advisory"
+                href="#services"
                 className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-brand-teal-mid after:to-brand-emerald-mid after:transition-all after:duration-500 hover:after:w-full text-sm lg:text-base"
-                aria-label="View AI advisory services"
+                aria-label="View services"
               >
-                AI Advisory
+                Services
               </a>
             </li>
             <li>
               <a
-                href="#agentic-transformation"
+                href="#features"
                 className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-brand-teal-mid after:to-brand-emerald-mid after:transition-all after:duration-500 hover:after:w-full text-sm lg:text-base"
-                aria-label="View AI transformation services"
+                aria-label="View features"
               >
-                AI Experts
+                Features
               </a>
             </li>
             <li>
               <a
-                href="#solutions"
+                href="#ag-ui"
                 className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-brand-teal-mid after:to-brand-emerald-mid after:transition-all after:duration-500 hover:after:w-full text-sm lg:text-base"
-                aria-label="View solutions"
+                aria-label="View RAG data retrieval"
               >
-                Solutions
-              </a>
-            </li>
-            <li>
-              <a
-                href="#industries"
-                className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-brand-teal-mid after:to-brand-emerald-mid after:transition-all after:duration-500 hover:after:w-full text-sm lg:text-base"
-                aria-label="View industries"
-              >
-                Industries
-              </a>
-            </li>
-            <li>
-              <a
-                href="#case-studies"
-                className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-brand-teal-mid after:to-brand-emerald-mid after:transition-all after:duration-500 hover:after:w-full text-sm lg:text-base"
-                aria-label="View case studies"
-              >
-                Case Studies
+                RAG Data Retrieval
               </a>
             </li>
             <li>
@@ -120,47 +102,29 @@ export default function Header() {
             <ul className="flex flex-col gap-3">
               <li>
                 <a
-                  href="#ai-advisory"
+                  href="#services"
                   className="block py-3 px-4 text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-300 hover:pl-6 hover:bg-light-primary/50 dark:hover:bg-dark-primary/50 rounded-lg"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  AI Advisory
+                  Services
                 </a>
               </li>
               <li>
                 <a
-                  href="#agentic-transformation"
+                  href="#features"
                   className="block py-3 px-4 text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-300 hover:pl-6 hover:bg-light-primary/50 dark:hover:bg-dark-primary/50 rounded-lg"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  AI Experts
+                  Features
                 </a>
               </li>
               <li>
                 <a
-                  href="#solutions"
+                  href="#ag-ui"
                   className="block py-3 px-4 text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-300 hover:pl-6 hover:bg-light-primary/50 dark:hover:bg-dark-primary/50 rounded-lg"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Solutions
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#industries"
-                  className="block py-3 px-4 text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-300 hover:pl-6 hover:bg-light-primary/50 dark:hover:bg-dark-primary/50 rounded-lg"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Industries
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#case-studies"
-                  className="block py-3 px-4 text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-300 hover:pl-6 hover:bg-light-primary/50 dark:hover:bg-dark-primary/50 rounded-lg"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Case Studies
+                  RAG Data Retrieval
                 </a>
               </li>
               <li className="pt-3">
