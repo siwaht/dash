@@ -61,14 +61,14 @@ export default function Footer({ onOpenPrivacy }: FooterProps) {
             <p className="text-text-light-secondary dark:text-text-dark-secondary text-sm md:text-base text-center md:text-left font-medium">
               &copy; {currentYear} AgentX. All rights reserved.
             </p>
-            <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm md:text-base">
+            <div className="flex flex-wrap justify-center md:justify-end gap-6 sm:gap-8 text-sm md:text-base">
               <button
                 onClick={onOpenPrivacy}
-                className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110"
+                className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110 whitespace-nowrap"
               >
                 Privacy Policy
               </button>
-              <a href="#" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110">
+              <a href="#" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110 whitespace-nowrap">
                 Terms of Service
               </a>
             </div>
