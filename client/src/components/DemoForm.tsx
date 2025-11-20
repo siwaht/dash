@@ -18,25 +18,28 @@ export default function DemoForm() {
     setErrorMessage('');
 
     const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get('name') as string,
-      email: formData.get('email') as string,
-      company: formData.get('company') as string,
-      jobTitle: formData.get('job_title') as string,
-      serviceInterest: formData.get('service_interest') as string,
-    };
+
+    // Create URL-encoded data for Make.com webhook
+    const urlEncodedData = new URLSearchParams();
+    urlEncodedData.append('name', formData.get('name') as string);
+    urlEncodedData.append('email', formData.get('email') as string);
+    urlEncodedData.append('company', formData.get('company') as string);
+    urlEncodedData.append('jobTitle', formData.get('job_title') as string);
+    urlEncodedData.append('serviceInterest', formData.get('service_interest') as string);
 
     try {
-      // Send to Make.com webhook
+      // Send to Make.com webhook with URL-encoded format
       const response = await fetch('https://hook.eu2.make.com/mrcku77cr9m4cfi1lcp79kj8ch5ej2kv', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(data),
+        body: urlEncodedData.toString(),
       });
 
       if (!response.ok) {
+        const errorText = await response.text();
+        console.error('Webhook response:', errorText);
         throw new Error('Failed to submit consultation request');
       }
 
