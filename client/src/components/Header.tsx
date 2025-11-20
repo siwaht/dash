@@ -11,10 +11,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-8">
         <nav className="flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-brand rounded-lg flex items-center justify-center text-white font-bold text-lg sm:text-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-              A
-            </div>
-            <span className="font-display text-xl sm:text-2xl font-bold text-text-light-primary dark:text-text-dark-primary tracking-tight group-hover:text-gradient transition-colors duration-300">
+            <span className="font-display text-xl sm:text-2xl font-bold text-brand-blue-dark tracking-tight transition-colors duration-300">
               Agenticoslabs
             </span>
           </div>
