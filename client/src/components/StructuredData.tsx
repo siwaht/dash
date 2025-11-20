@@ -9,7 +9,8 @@ export default function StructuredData() {
         "description": "Expert guidance to unlock AI's full potential from opportunity discovery to responsible implementation",
         "provider": {
           "@type": "Organization",
-          "name": "AgentX"
+          "name": "AgentX",
+          "url": "https://agentx.ai"
         },
         "serviceType": "AI Consulting"
       },
@@ -19,7 +20,8 @@ export default function StructuredData() {
         "description": "Deploy specialized AI agents that function like a digital workforce with autonomous planning and task execution",
         "provider": {
           "@type": "Organization",
-          "name": "AgentX"
+          "name": "AgentX",
+          "url": "https://agentx.ai"
         },
         "serviceType": "AI Platform"
       },
@@ -29,7 +31,8 @@ export default function StructuredData() {
         "description": "End-to-end process transformation with intelligent workflow automation and exception handling",
         "provider": {
           "@type": "Organization",
-          "name": "AgentX"
+          "name": "AgentX",
+          "url": "https://agentx.ai"
         },
         "serviceType": "Workflow Automation"
       }
@@ -79,6 +82,7 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "AgentX",
+    "url": "https://agentx.ai",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",

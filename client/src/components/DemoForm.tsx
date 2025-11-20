@@ -26,7 +26,8 @@ export default function DemoForm() {
     };
 
     try {
-      const response = await fetch('https://hook.eu2.make.com/mrcku77cr9m4cfi1lcp79kj8ch5ej2kv', {
+      // 1. Save to local database first
+      const dbResponse = await fetch('/api/consultation-requests', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -34,8 +35,22 @@ export default function DemoForm() {
         body: JSON.stringify(data),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to submit consultation request');
+      if (!dbResponse.ok) {
+        console.error('Failed to save to database, but proceeding to webhook');
+        // We don't throw here to allow the webhook to still try
+      }
+
+      // 2. Send to Make.com Webhook
+      const webhookResponse = await fetch('https://hook.eu2.make.com/mrcku77cr9m4cfi1lcp79kj8ch5ej2kv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!webhookResponse.ok) {
+        throw new Error('Failed to submit consultation request to webhook');
       }
 
       setSubmitStatus('success');
