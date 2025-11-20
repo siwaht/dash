@@ -12,10 +12,17 @@ export default function Header() {
         <nav className="flex justify-between items-center">
           <a
             href="#"
-            className="font-display text-2xl md:text-3xl font-bold text-gradient transition-all hover:scale-110 inline-block duration-500"
+            className="flex items-center gap-3 transition-all hover:scale-110 duration-500"
             aria-label="Agenticoslabs home"
           >
-            Agenticoslabs
+            <img
+              src="/agenticoswithoutbackground.png"
+              alt="Agenticoslabs Logo"
+              className="w-10 h-10 md:w-12 md:h-12"
+            />
+            <span className="font-display text-2xl md:text-3xl font-bold text-gradient">
+              Agenticoslabs
+            </span>
           </a>
 
           <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
