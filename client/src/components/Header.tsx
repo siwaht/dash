@@ -11,7 +11,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-8">
         <nav className="flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer">
-            <span className="font-display text-xl sm:text-2xl font-bold text-brand-blue-dark tracking-tight transition-colors duration-300">
+            <span className="font-sans text-xl sm:text-2xl font-bold text-brand-blue-dark tracking-tight transition-colors duration-300">
               Agenticoslabs
             </span>
           </div>
