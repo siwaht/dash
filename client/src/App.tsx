@@ -18,6 +18,17 @@ import TermsOfService from "./components/TermsOfService";
 import StructuredData from "./components/StructuredData";
 import { useState } from "react";
 
+// Declare ElevenLabs custom element for TypeScript
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'elevenlabs-convai': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & {
+        'agent-id': string;
+      }, HTMLElement>;
+    }
+  }
+}
+
 function App() {
   const [showPrivacyModal, setShowPrivacyModal] = useState(false);
   const [showTermsModal, setShowTermsModal] = useState(false);
@@ -59,6 +70,9 @@ function App() {
           {showTermsModal && (
             <TermsOfService onClose={() => setShowTermsModal(false)} />
           )}
+
+          {/* ElevenLabs Conversational AI Widget */}
+          <elevenlabs-convai agent-id="agent_8101kag11j3ve2ntxw48ke5tsbww"></elevenlabs-convai>
         </div>
       </ThemeProvider>
     </ErrorBoundary>
