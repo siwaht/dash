@@ -34,7 +34,7 @@ export default function PrivacyPolicy({ onClose }: PrivacyPolicyProps) {
               1. Introduction
             </h2>
             <p className="mb-3">
-              Welcome to DashboardX ("we," "our," or "us"). DashboardX.co operates an AI-powered data analysis platform utilizing Agentic RAG (Retrieval-Augmented Generation) technology and AG UI (Agentic GUI) to help enterprises analyze and visualize their data.
+              Welcome to Agenticoslabs ("we," "our," or "us"). Agenticoslabs (agenticoslabs.com) operates a privacy-first, globally compliant enterprise agentic AI platform that provides intelligent AI agents for workflow automation, customer service, and business operations.
             </p>
             <p>
               We understand that enterprise data is highly sensitive and confidential. This Privacy Policy explains how we collect, use, protect, and handle your information when you use our services. We are committed to maintaining the highest standards of data security and privacy.
@@ -50,7 +50,7 @@ export default function PrivacyPolicy({ onClose }: PrivacyPolicyProps) {
               2.1 Enterprise Data
             </h3>
             <p className="mb-2">
-              When you use DashboardX, you may upload, integrate, or connect various types of enterprise data including:
+              When you use Agenticoslabs, you may upload, integrate, or connect various types of enterprise data including:
             </p>
             <ul className="list-disc pl-5 space-y-1 mb-3">
               <li>Business documents and files</li>
@@ -93,9 +93,10 @@ export default function PrivacyPolicy({ onClose }: PrivacyPolicyProps) {
               3.1 Service Delivery
             </h3>
             <ul className="list-disc pl-5 space-y-1 mb-3">
-              <li>Process and analyze your data using our Agentic RAG technology</li>
-              <li>Generate visual insights through AG UI</li>
-              <li>Provide real-time data analysis and recommendations</li>
+              <li>Deploy and manage AI voice agents, chat agents, and AI avatars</li>
+              <li>Process queries through RAG (Retrieval-Augmented Generation) data retrieval</li>
+              <li>Automate workflows and business operations</li>
+              <li>Provide real-time AI-powered customer service and support</li>
               <li>Maintain and improve platform performance</li>
             </ul>
 
@@ -169,7 +170,7 @@ export default function PrivacyPolicy({ onClose }: PrivacyPolicyProps) {
               6.1 We Do NOT Share Your Enterprise Data
             </h3>
             <p className="mb-3">
-              Your enterprise data analyzed through DashboardX is NEVER sold, shared, or disclosed to third parties for marketing or any other purposes.
+              Your enterprise data analyzed through Agenticoslabs is NEVER sold, shared, or disclosed to third parties for marketing or any other purposes.
             </p>
 
             <h3 className="font-display text-lg font-semibold text-text-light-primary dark:text-text-dark-primary mb-2 mt-3">
@@ -205,8 +206,9 @@ export default function PrivacyPolicy({ onClose }: PrivacyPolicyProps) {
             <h2 className="font-display text-xl font-bold text-text-light-primary dark:text-text-dark-primary mb-3">
               8. Compliance and Certifications
             </h2>
-            <p className="mb-2">DashboardX complies with:</p>
+            <p className="mb-2">Agenticoslabs complies with:</p>
             <ul className="list-disc pl-5 space-y-1 mb-3">
+              <li>Health Insurance Portability and Accountability Act (HIPAA)</li>
               <li>General Data Protection Regulation (GDPR)</li>
               <li>California Consumer Privacy Act (CCPA)</li>
               <li>SOC 2 Type II standards</li>
@@ -252,7 +254,7 @@ export default function PrivacyPolicy({ onClose }: PrivacyPolicyProps) {
               11. Children's Privacy
             </h2>
             <p>
-              DashboardX is designed for enterprise use and is not intended for individuals under 18 years of age. We do not knowingly collect information from children.
+              Agenticoslabs is designed for enterprise use and is not intended for individuals under 18 years of age. We do not knowingly collect information from children.
             </p>
           </section>
 
@@ -269,7 +271,7 @@ export default function PrivacyPolicy({ onClose }: PrivacyPolicyProps) {
               <li>In-app notifications</li>
             </ul>
             <p>
-              Your continued use of DashboardX after changes become effective constitutes acceptance of the updated policy.
+              Your continued use of Agenticoslabs after changes become effective constitutes acceptance of the updated policy.
             </p>
           </section>
 
@@ -281,14 +283,14 @@ export default function PrivacyPolicy({ onClose }: PrivacyPolicyProps) {
               If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
             </p>
             <div className="bg-light-secondary dark:bg-dark-secondary p-4 rounded-lg border-2 border-brand-slate-light/30 dark:border-brand-slate/30">
-              <p className="mb-2"><strong>DashboardX Privacy Team</strong></p>
-              <p>Email: cc@dashboardx.co</p>
+              <p className="mb-2"><strong>Agenticoslabs Privacy Team</strong></p>
+              <p>Email: support@agenticoslabs.com</p>
             </div>
           </section>
 
           <section className="pt-6 border-t-2 border-brand-slate-light/30 dark:border-brand-slate/30">
             <p className="text-sm italic">
-              By using DashboardX, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. We are committed to protecting your enterprise data with the highest standards of security and confidentiality.
+              By using Agenticoslabs, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. We are committed to protecting your enterprise data with the highest standards of security and confidentiality.
             </p>
           </section>
         </div>
