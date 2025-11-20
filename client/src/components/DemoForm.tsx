@@ -12,11 +12,12 @@ export default function DemoForm() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget; // Capture form reference
     setIsSubmitting(true);
     setSubmitStatus('idle');
     setErrorMessage('');
 
-    const formData = new FormData(e.currentTarget);
+    const formData = new FormData(form);
     const data = {
       name: formData.get('name') as string,
       email: formData.get('email') as string,
@@ -37,7 +38,6 @@ export default function DemoForm() {
 
       if (!dbResponse.ok) {
         console.error('Failed to save to database, but proceeding to webhook');
-        // We don't throw here to allow the webhook to still try
       }
 
       // 2. Send to Make.com Webhook
@@ -54,7 +54,7 @@ export default function DemoForm() {
       }
 
       setSubmitStatus('success');
-      e.currentTarget.reset();
+      form.reset(); // Use captured reference
     } catch (error) {
       console.error('Error submitting consultation request:', error);
       setSubmitStatus('error');
