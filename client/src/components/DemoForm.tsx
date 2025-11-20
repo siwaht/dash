@@ -26,7 +26,8 @@ export default function DemoForm() {
     };
 
     try {
-      const response = await fetch('/api/consultation-requests', {
+      // Send to Make.com webhook
+      const response = await fetch('https://hook.eu2.make.com/mrcku77cr9m4cfi1lcp79kj8ch5ej2kv', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,8 +36,7 @@ export default function DemoForm() {
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Failed to submit consultation request');
+        throw new Error('Failed to submit consultation request');
       }
 
       setSubmitStatus('success');
