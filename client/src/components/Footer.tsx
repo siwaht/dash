@@ -2,9 +2,10 @@ import { Linkedin, Instagram } from 'lucide-react';
 
 interface FooterProps {
   onOpenPrivacy: () => void;
+  onOpenTerms: () => void;
 }
 
-export default function Footer({ onOpenPrivacy }: FooterProps) {
+export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -68,9 +69,12 @@ export default function Footer({ onOpenPrivacy }: FooterProps) {
               >
                 Privacy Policy
               </button>
-              <a href="#" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110 whitespace-nowrap">
+              <button
+                onClick={onOpenTerms}
+                className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110 whitespace-nowrap"
+              >
                 Terms of Service
-              </a>
+              </button>
             </div>
           </div>
         </div>
