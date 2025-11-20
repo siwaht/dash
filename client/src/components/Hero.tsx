@@ -33,37 +33,37 @@ export default function Hero() {
           </p>
 
           <div className="scroll-reveal max-w-4xl mx-auto mb-8 sm:mb-9 md:mb-10" style={{ animationDelay: '0.25s' }}>
-            <div className="bg-light-secondary/50 dark:bg-dark-secondary/50 backdrop-blur-sm p-4 sm:p-6 rounded-2xl border border-brand-slate-light/20 dark:border-brand-slate/20">
-              <h2 className="text-lg sm:text-xl font-bold text-text-light-primary dark:text-text-dark-primary mb-3">
+            <div className="bg-light-secondary/50 dark:bg-dark-secondary/50 backdrop-blur-sm p-5 sm:p-6 md:p-8 rounded-2xl border border-brand-slate-light/20 dark:border-brand-slate/20 shadow-elevation-1">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-text-light-primary dark:text-text-dark-primary mb-3 sm:mb-4 text-center sm:text-left">
                 A New Operating Layer for the Enterprise
               </h2>
-              <p className="text-sm sm:text-base text-text-light-secondary dark:text-text-dark-secondary mb-4 leading-relaxed">
+              <p className="text-sm sm:text-base text-text-light-secondary dark:text-text-dark-secondary mb-5 sm:mb-6 leading-relaxed text-center sm:text-left">
                 Modern enterprises need more than chatbots — they need autonomous digital workers that:
               </p>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                <li className="flex items-start gap-2">
-                  <span className="text-brand-emerald-mid mt-0.5">✓</span>
-                  <span>Understand your systems, data, and business logic</span>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4 sm:gap-y-4 sm:gap-x-6 md:gap-y-4 md:gap-x-8">
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-emerald-mid text-lg sm:text-xl font-bold flex-shrink-0 leading-none">✓</span>
+                  <span className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary leading-relaxed">Understand your systems, data, and business logic</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-brand-emerald-mid mt-0.5">✓</span>
-                  <span>Execute multi-step tasks end-to-end</span>
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-emerald-mid text-lg sm:text-xl font-bold flex-shrink-0 leading-none">✓</span>
+                  <span className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary leading-relaxed">Execute multi-step tasks end-to-end</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-brand-emerald-mid mt-0.5">✓</span>
-                  <span>Integrate seamlessly across your tech stack</span>
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-emerald-mid text-lg sm:text-xl font-bold flex-shrink-0 leading-none">✓</span>
+                  <span className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary leading-relaxed">Integrate seamlessly across your tech stack</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-brand-emerald-mid mt-0.5">✓</span>
-                  <span>Learn continuously from outcomes</span>
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-emerald-mid text-lg sm:text-xl font-bold flex-shrink-0 leading-none">✓</span>
+                  <span className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary leading-relaxed">Learn continuously from outcomes</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-brand-emerald-mid mt-0.5">✓</span>
-                  <span>Adapt instantly to new processes and rules</span>
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-emerald-mid text-lg sm:text-xl font-bold flex-shrink-0 leading-none">✓</span>
+                  <span className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary leading-relaxed">Adapt instantly to new processes and rules</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-brand-emerald-mid mt-0.5">✓</span>
-                  <span>Privacy-first with HIPAA, GDPR compliance</span>
+                <li className="flex items-center gap-3">
+                  <span className="text-brand-emerald-mid text-lg sm:text-xl font-bold flex-shrink-0 leading-none">✓</span>
+                  <span className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary leading-relaxed">Privacy-first with HIPAA, GDPR compliance</span>
                 </li>
               </ul>
             </div>
