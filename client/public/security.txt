@@ -1,20 +1,20 @@
-Contact: mailto:security@agentx.ai
+Contact: mailto:security@agenticoslabs.com
 Expires: 2026-12-31T23:59:59.000Z
 Preferred-Languages: en
-Canonical: https://agentx.ai/.well-known/security.txt
+Canonical: https://agenticoslabs.com/.well-known/security.txt
 
 # Security Policy
 
-Thank you for helping keep AgentX and our users safe!
+Thank you for helping keep Agenticoslabs and our users safe!
 
 ## Reporting Security Issues
 
-If you believe you have found a security vulnerability in any AgentX-owned repository, 
+If you believe you have found a security vulnerability in any Agenticoslabs-owned repository,
 please report it to us through coordinated disclosure.
 
 **Please do not report security vulnerabilities through public GitHub issues, discussions, or pull requests.**
 
-Instead, please send an email to security@agentx.ai with the following information:
+Instead, please send an email to security@agenticoslabs.com with the following information:
 
 - Type of issue (e.g. SQL injection, XSS, etc.)
 - Full paths of source file(s) related to the manifestation of the issue

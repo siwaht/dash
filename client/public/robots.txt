@@ -1,4 +1,4 @@
-# robots.txt for AgentX - Enterprise Agentic AI Platform
+# robots.txt for Agenticoslabs - Enterprise Agentic AI Platform
 
 # Allow all crawlers
 User-agent: *
@@ -12,7 +12,7 @@ Crawl-delay: 1
 # Disallow: /api/
 
 # Sitemap location
-Sitemap: https://agentx.ai/sitemap.xml
+Sitemap: https://agenticoslabs.com/sitemap.xml
 
 # Specific rules for major search engines
 User-agent: Googlebot

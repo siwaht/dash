@@ -1,4 +1,4 @@
-# AgentX - Enterprise Agentic AI Platform
+# Agenticoslabs - Enterprise Agentic AI Platform
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue)](https://www.typescriptlang.org/)
@@ -137,7 +137,7 @@ Manages light/dark theme with system preference detection and localStorage persi
 
 ## 🔒 Security
 
-We take security seriously. If you discover a security vulnerability, please send an email to security@agentx.ai. See [security.txt](client/public/security.txt) for more details.
+We take security seriously. If you discover a security vulnerability, please send an email to security@agenticoslabs.com. See [security.txt](client/public/security.txt) for more details.
 
 ## 🌐 Deployment
 
@@ -283,14 +283,14 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Support
 
-For support, email support@agentx.ai or visit our [website](https://agentx.ai).
+For support, email support@agenticoslabs.com or visit our [website](https://agenticoslabs.com).
 
 ## 🔗 Links
 
-- **Website**: https://agentx.ai
-- **LinkedIn**: https://www.linkedin.com/company/agentx
-- **Instagram**: https://www.instagram.com/agentx
+- **Website**: https://agenticoslabs.com
+- **LinkedIn**: https://www.linkedin.com/company/agenticoslabs
+- **Instagram**: https://www.instagram.com/agenticoslabs
 
 ---
 
-Made with ❤️ by the AgentX Team
+Made with ❤️ by the Agenticoslabs Team

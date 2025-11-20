@@ -13,9 +13,9 @@ export default function Header() {
           <a
             href="#"
             className="font-display text-2xl md:text-3xl font-bold text-gradient transition-all hover:scale-110 inline-block duration-500"
-            aria-label="AgentX home"
+            aria-label="Agenticoslabs home"
           >
-            AgentX
+            Agenticoslabs
           </a>
 
           <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
