@@ -19,22 +19,23 @@ export default function DemoForm() {
 
     const formData = new FormData(e.currentTarget);
 
-    // Create URL-encoded data for Make.com webhook
-    const urlEncodedData = new URLSearchParams();
-    urlEncodedData.append('name', formData.get('name') as string);
-    urlEncodedData.append('email', formData.get('email') as string);
-    urlEncodedData.append('company', formData.get('company') as string);
-    urlEncodedData.append('jobTitle', formData.get('job_title') as string);
-    urlEncodedData.append('serviceInterest', formData.get('service_interest') as string);
+    // Create JSON payload for Make.com webhook
+    const payload = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      company: formData.get('company') as string,
+      jobTitle: formData.get('job_title') as string,
+      serviceInterest: formData.get('service_interest') as string,
+    };
 
     try {
-      // Send to Make.com webhook with URL-encoded format
+      // Send to Make.com webhook with JSON format
       const response = await fetch('https://hook.eu2.make.com/mrcku77cr9m4cfi1lcp79kj8ch5ej2kv', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
         },
-        body: urlEncodedData.toString(),
+        body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
