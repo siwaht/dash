@@ -7,7 +7,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 py-5 md:py-7 bg-light-primary/95 dark:bg-dark-primary/95 backdrop-blur-xl border-b border-brand-slate-light/20 dark:border-brand-slate/20 transition-all duration-300 shadow-elevation-1">
+    <header className="sticky top-0 z-50 py-5 sm:py-6 md:py-7 bg-light-primary/95 dark:bg-dark-primary/95 backdrop-blur-xl border-b border-brand-slate-light/20 dark:border-brand-slate/20 transition-all duration-300 shadow-elevation-1">
       <div className="container mx-auto px-4 md:px-8">
         <nav className="flex justify-between items-center">
           <a
@@ -18,7 +18,7 @@ export default function Header() {
             Agenticoslabs
           </a>
 
-          <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
+          <ul className="hidden md:flex gap-3 md:gap-4 lg:gap-6 items-center">
             <li>
               <a
                 href="#services"

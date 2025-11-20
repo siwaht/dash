@@ -55,13 +55,13 @@ export default function DemoForm() {
   };
 
   return (
-    <section ref={sectionRef} id="demo-form" aria-labelledby="demo-form-heading" className="py-16 md:py-24 bg-light-primary dark:bg-dark-primary transition-colors relative overflow-hidden">
+    <section ref={sectionRef} id="demo-form" aria-labelledby="demo-form-heading" className="py-16 sm:py-20 md:py-24 bg-light-primary dark:bg-dark-primary transition-colors relative overflow-hidden">
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto bg-light-primary/95 dark:bg-dark-primary/95 p-6 sm:p-8 md:p-12 lg:p-16 rounded-3xl border border-brand-slate-light/30 dark:border-brand-slate/30 shadow-elevation-3 relative overflow-hidden">
+        <div className="max-w-4xl mx-auto bg-light-primary/95 dark:bg-dark-primary/95 p-4 sm:p-8 md:p-12 lg:p-16 rounded-3xl border border-brand-slate-light/30 dark:border-brand-slate/30 shadow-elevation-3 relative overflow-hidden">
 
           <div className="relative z-10">
-            <div className="text-center mb-8 md:mb-10">
+            <div className="text-center mb-6 sm:mb-8 md:mb-10">
               <div className="inline-flex items-center gap-3 bg-light-secondary/90 dark:bg-dark-secondary/90 px-6 py-3 rounded-full border border-brand-emerald-mid/30 mb-8 shadow-elevation-2">
                 <Sparkles className="w-5 h-5 text-brand-emerald-mid" />
                 <span className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-blue-mid via-brand-teal-mid to-brand-emerald-mid">
@@ -69,16 +69,16 @@ export default function DemoForm() {
                 </span>
               </div>
 
-              <h2 id="demo-form-heading" className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-gradient tracking-tight">
+              <h2 id="demo-form-heading" className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-5 md:mb-6 text-gradient tracking-tight">
                 Get Your Free Consultation
               </h2>
-              <p className="text-text-light-secondary dark:text-text-dark-secondary leading-relaxed text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-medium px-2">
+              <p className="text-text-light-secondary dark:text-text-dark-secondary leading-relaxed text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-medium">
                 Discover how AI agents can transform your business operations. Schedule a personalized consultation with our team to explore voice agents, chat bots, AI avatars, and workflow automation tailored to your needs.
               </p>
             </div>
 
             {submitStatus === 'success' && (
-              <div className="scroll-reveal mb-6 md:mb-8 p-5 sm:p-6 md:p-8 bg-green-50 dark:bg-green-900/30 border-2 border-green-300 dark:border-green-700 rounded-2xl flex items-start gap-3 sm:gap-4 shadow-elevation-2 animate-fadeInScale">
+              <div className="scroll-reveal mb-4 sm:mb-6 md:mb-8 p-5 sm:p-6 md:p-8 bg-green-50 dark:bg-green-900/30 border-2 border-green-300 dark:border-green-700 rounded-2xl flex items-start gap-3 sm:gap-4 shadow-elevation-2 animate-fadeInScale">
                 <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-semibold text-green-900 dark:text-green-100 mb-1">
@@ -92,7 +92,7 @@ export default function DemoForm() {
             )}
 
             {submitStatus === 'error' && (
-              <div className="scroll-reveal mb-6 md:mb-8 p-5 sm:p-6 md:p-8 bg-red-50 dark:bg-red-900/30 border-2 border-red-300 dark:border-red-700 rounded-2xl flex items-start gap-3 sm:gap-4 shadow-elevation-2 animate-fadeInScale">
+              <div className="scroll-reveal mb-4 sm:mb-6 md:mb-8 p-5 sm:p-6 md:p-8 bg-red-50 dark:bg-red-900/30 border-2 border-red-300 dark:border-red-700 rounded-2xl flex items-start gap-3 sm:gap-4 shadow-elevation-2 animate-fadeInScale">
                 <AlertCircle className="w-8 h-8 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-semibold text-red-900 dark:text-red-100 mb-1">
@@ -105,7 +105,7 @@ export default function DemoForm() {
               </div>
             )}
 
-            <form ref={formRef} onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
               <div className="scroll-reveal flex flex-col group">
                 <label
                   htmlFor="name"
