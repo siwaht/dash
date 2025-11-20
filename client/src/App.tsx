@@ -10,11 +10,13 @@ import CaseStudies from "./components/CaseStudies";
 import DemoForm from "./components/DemoForm";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsOfService from "./components/TermsOfService";
 import StructuredData from "./components/StructuredData";
 import { useState } from "react";
 
 function App() {
   const [showPrivacyModal, setShowPrivacyModal] = useState(false);
+  const [showTermsModal, setShowTermsModal] = useState(false);
 
   return (
     <ThemeProvider>
@@ -37,10 +39,17 @@ function App() {
           <CaseStudies />
           <DemoForm />
         </main>
-        <Footer onOpenPrivacy={() => setShowPrivacyModal(true)} />
+        <Footer
+          onOpenPrivacy={() => setShowPrivacyModal(true)}
+          onOpenTerms={() => setShowTermsModal(true)}
+        />
 
         {showPrivacyModal && (
           <PrivacyPolicy onClose={() => setShowPrivacyModal(false)} />
+        )}
+
+        {showTermsModal && (
+          <TermsOfService onClose={() => setShowTermsModal(false)} />
         )}
       </div>
     </ThemeProvider>
