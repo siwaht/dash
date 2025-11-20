@@ -15,16 +15,9 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
       <div className="container mx-auto px-4 md:px-8 py-16 relative z-10">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-3 hover:scale-110 transition-all duration-500 cursor-pointer">
-              <img
-                src="/agenticoswithoutbackground.png"
-                alt="Agenticoslabs Logo"
-                className="w-10 h-10 md:w-12 md:h-12"
-              />
-              <h3 className="font-display text-2xl md:text-3xl font-bold text-gradient">
-                Agenticoslabs
-              </h3>
-            </div>
+            <h3 className="font-display text-2xl md:text-3xl font-bold text-gradient hover:scale-110 transition-all duration-500 cursor-pointer">
+              Agenticoslabs
+            </h3>
 
             <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-8">
               <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm md:text-base">
