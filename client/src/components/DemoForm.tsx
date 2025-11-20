@@ -7,6 +7,7 @@ export default function DemoForm() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
   const sectionRef = useRef<HTMLElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   useIntersectionObserver(sectionRef, { staggerDelay: 100 });
 
@@ -40,7 +41,10 @@ export default function DemoForm() {
       }
 
       setSubmitStatus('success');
-      e.currentTarget.reset();
+      // Reset form using ref instead of event object
+      if (formRef.current) {
+        formRef.current.reset();
+      }
     } catch (error) {
       console.error('Error submitting consultation request:', error);
       setSubmitStatus('error');
@@ -101,7 +105,7 @@ export default function DemoForm() {
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
               <div className="scroll-reveal flex flex-col group">
                 <label
                   htmlFor="name"
