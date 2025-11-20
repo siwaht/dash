@@ -284,7 +284,7 @@ export default function PrivacyPolicy({ onClose }: PrivacyPolicyProps) {
             </p>
             <div className="bg-light-secondary dark:bg-dark-secondary p-4 rounded-lg border-2 border-brand-slate-light/30 dark:border-brand-slate/30">
               <p className="mb-2"><strong>Agenticoslabs Privacy Team</strong></p>
-              <p>Email: support@agenticoslabs.com</p>
+              <p>Email: cc@agenticoslabs.com</p>
             </div>
           </section>
 

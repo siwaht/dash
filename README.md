@@ -137,7 +137,7 @@ Manages light/dark theme with system preference detection and localStorage persi
 
 ## 🔒 Security
 
-We take security seriously. If you discover a security vulnerability, please send an email to security@agenticoslabs.com. See [security.txt](client/public/security.txt) for more details.
+We take security seriously. If you discover a security vulnerability, please send an email to cc@agenticoslabs.com. See [security.txt](client/public/security.txt) for more details.
 
 ## 🌐 Deployment
 
@@ -283,7 +283,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Support
 
-For support, email support@agenticoslabs.com or visit our [website](https://agenticoslabs.com).
+For support, email cc@agenticoslabs.com or visit our [website](https://agenticoslabs.com).
 
 ## 🔗 Links
 
