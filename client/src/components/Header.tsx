@@ -11,8 +11,8 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 py-5 md:py-7 card-elegant backdrop-blur-xl border-b border-brand-slate-light/20 dark:border-brand-slate/20 transition-all duration-300 shadow-soft">
-      <div className="container mx-auto px-4 md:px-8">
+    <header className="sticky top-0 z-50 py-5 md:py-7 card-elegant backdrop-blur-xl border-b border-brand-slate-light/20 dark:border-brand-slate/20 transition-all duration-300 shadow-soft w-full left-0 right-0">
+      <div className="mx-auto px-4 md:px-8 max-w-full">
         <nav className="flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer" onClick={scrollToTop}>
             <img src="/logo.png" alt="Agenticoslabs Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain" />
