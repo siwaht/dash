@@ -17,7 +17,7 @@ export default function Header() {
             </span>
           </div>
 
-          <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
+          <ul className="hidden md:flex flex-1 justify-center gap-4 lg:gap-8 items-center">
             <li>
               <a
                 href="#ai-advisory"
