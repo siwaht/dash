@@ -24,17 +24,17 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-8">
-                            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm md:text-base">
-                                <a href="#services" className="px-4 py-2 rounded-lg text-text-light-secondary dark:text-text-dark-secondary font-bold bg-light-secondary/50 dark:bg-dark-secondary/50 hover:bg-light-primary dark:hover:bg-dark-primary hover:text-gradient transition-all duration-500 hover:scale-105">
+                            <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm md:text-base">
+                                <a href="#services" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110">
                                     Services
                                 </a>
-                                <a href="#features" className="px-4 py-2 rounded-lg text-text-light-secondary dark:text-text-dark-secondary font-bold bg-light-secondary/50 dark:bg-dark-secondary/50 hover:bg-light-primary dark:hover:bg-dark-primary hover:text-gradient transition-all duration-500 hover:scale-105">
+                                <a href="#features" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110">
                                     Features
                                 </a>
-                                <a href="#ag-ui" className="px-4 py-2 rounded-lg text-text-light-secondary dark:text-text-dark-secondary font-bold bg-light-secondary/50 dark:bg-dark-secondary/50 hover:bg-light-primary dark:hover:bg-dark-primary hover:text-gradient transition-all duration-500 hover:scale-105">
+                                <a href="#ag-ui" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110">
                                     RAG Data Retrieval
                                 </a>
-                                <a href="#demo-form" className="px-4 py-2 rounded-lg text-text-light-secondary dark:text-text-dark-secondary font-bold bg-light-secondary/50 dark:bg-dark-secondary/50 hover:bg-light-primary dark:hover:bg-dark-primary hover:text-gradient transition-all duration-500 hover:scale-105">
+                                <a href="#demo-form" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110">
                                     Contact
                                 </a>
                             </div>
@@ -66,16 +66,16 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
                         <p className="text-text-light-secondary dark:text-text-dark-secondary text-sm md:text-base text-center md:text-left font-medium">
                             &copy; {currentYear} Agenticoslabs. All rights reserved.
                         </p>
-                        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm md:text-base">
+                        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm md:text-base">
                             <button
                                 onClick={onOpenPrivacy}
-                                className="px-4 py-2 rounded-lg text-text-light-secondary dark:text-text-dark-secondary font-bold bg-light-secondary/50 dark:bg-dark-secondary/50 hover:bg-light-primary dark:hover:bg-dark-primary hover:text-gradient transition-all duration-500 hover:scale-105"
+                                className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110"
                             >
                                 Privacy Policy
                             </button>
                             <button
                                 onClick={onOpenTerms}
-                                className="px-4 py-2 rounded-lg text-text-light-secondary dark:text-text-dark-secondary font-bold bg-light-secondary/50 dark:bg-dark-secondary/50 hover:bg-light-primary dark:hover:bg-dark-primary hover:text-gradient transition-all duration-500 hover:scale-105"
+                                className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110"
                             >
                                 Terms of Service
                             </button>
