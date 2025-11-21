@@ -15,14 +15,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
             <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-gradient-to-br from-brand-blue-mid/10 to-brand-teal-mid/8 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1.5s' }} />
             <div className="container mx-auto px-4 md:px-8 py-16 relative z-10">
                 <div className="flex flex-col gap-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-                        <div className="flex items-center justify-center gap-3 hover:scale-110 transition-all duration-500 cursor-pointer group">
-                            <img src="/logo.png" alt="Agenticoslabs Logo" className="w-10 h-10 md:w-12 md:h-12 object-contain flex-shrink-0" />
-                            <h3 className="font-sans text-xl md:text-2xl font-bold text-gradient whitespace-nowrap">
-                                Agenticoslabs
-                            </h3>
-                        </div>
-
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-6">
                         <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-8">
                             <div className="flex gap-4">
                                 <a
