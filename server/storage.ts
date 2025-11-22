@@ -1,10 +1,14 @@
 import { db } from "./db.js";
-import { demoRequests, consultationRequests } from "../shared/schema.js";
-import type { InsertDemoRequest, DemoRequest, InsertConsultationRequest, ConsultationRequest } from "../shared/schema.js";
+import { users, demoRequests, consultationRequests } from "../shared/schema.js";
+import type { InsertDemoRequest, DemoRequest, InsertConsultationRequest, ConsultationRequest, User, InsertUser } from "../shared/schema.js";
+import { eq } from "drizzle-orm";
 
 export interface IStorage {
   createDemoRequest(data: InsertDemoRequest): Promise<DemoRequest>;
   createConsultationRequest(data: InsertConsultationRequest): Promise<ConsultationRequest>;
+  getUser(id: string): Promise<User | undefined>;
+  getUserByUsername(username: string): Promise<User | undefined>;
+  createUser(user: InsertUser): Promise<User>;
 }
 
 export class DrizzleStorage implements IStorage {
@@ -32,6 +36,21 @@ export class DrizzleStorage implements IStorage {
     }
 
     return result;
+  }
+
+  async getUser(id: string): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.id, id));
+    return user;
+  }
+
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.username, username));
+    return user;
+  }
+
+  async createUser(user: InsertUser): Promise<User> {
+    const [newUser] = await db.insert(users).values(user).returning();
+    return newUser;
   }
 }
 

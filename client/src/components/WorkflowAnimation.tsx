@@ -165,8 +165,8 @@ export default function WorkflowAnimation() {
 
   return (
     <div ref={sectionRef} className="w-full max-w-7xl mx-auto mt-8 md:mt-12 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 border border-slate-700/50 rounded-2xl shadow-elevation-2 overflow-hidden">
-      <div className="relative w-full h-[280px] sm:h-[320px] md:h-[360px] p-4 sm:p-6 md:p-8">
-        <div className="relative w-full h-full" style={{ transform: 'scale(1)', transformOrigin: 'center center' }}>
+      <div className="relative w-full h-[280px] sm:h-[320px] md:h-[360px] p-4 sm:p-6 md:p-8 overflow-x-auto">
+        <div className="relative w-full h-full min-w-[600px]" style={{ transform: 'scale(1)', transformOrigin: 'center center' }}>
 
           <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none" style={{ zIndex: 1 }}>
             {edges.map((edge, index) => {
@@ -225,9 +225,8 @@ export default function WorkflowAnimation() {
             return (
               <div
                 key={index}
-                className={`absolute transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ${
-                  isVisible ? 'opacity-100' : 'opacity-20'
-                }`}
+                className={`absolute transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ${isVisible ? 'opacity-100' : 'opacity-20'
+                  }`}
                 style={{
                   left: `${node.x}%`,
                   top: `${node.y}%`,
@@ -236,26 +235,23 @@ export default function WorkflowAnimation() {
               >
                 <div className="flex flex-col items-center">
                   <div
-                    className={`relative bg-slate-800 rounded-lg transition-all duration-300 flex flex-col items-center justify-center min-w-[90px] ${
-                      status === 'active'
+                    className={`relative bg-slate-800 rounded-lg transition-all duration-300 flex flex-col items-center justify-center min-w-[90px] ${status === 'active'
                         ? 'border-2 border-cyan-400 shadow-lg shadow-cyan-400/50'
                         : status === 'completed'
-                        ? 'border-2 border-emerald-500 shadow-lg shadow-emerald-500/30'
-                        : 'border-2 border-slate-600'
-                    }`}
+                          ? 'border-2 border-emerald-500 shadow-lg shadow-emerald-500/30'
+                          : 'border-2 border-slate-600'
+                      }`}
                     style={{
                       padding: '12px 16px'
                     }}
                   >
-                    <div className={`mb-1.5 ${
-                      status === 'active' ? 'text-cyan-400' : status === 'completed' ? 'text-emerald-400' : 'text-slate-400'
-                    }`}>
+                    <div className={`mb-1.5 ${status === 'active' ? 'text-cyan-400' : status === 'completed' ? 'text-emerald-400' : 'text-slate-400'
+                      }`}>
                       <node.icon className="w-6 h-6" strokeWidth={2.5} />
                     </div>
 
-                    <div className={`text-xs font-bold mb-0.5 ${
-                      status === 'active' ? 'text-cyan-300' : status === 'completed' ? 'text-emerald-300' : 'text-slate-400'
-                    }`}>
+                    <div className={`text-xs font-bold mb-0.5 ${status === 'active' ? 'text-cyan-300' : status === 'completed' ? 'text-emerald-300' : 'text-slate-400'
+                      }`}>
                       {node.label}
                     </div>
 
