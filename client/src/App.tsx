@@ -1,6 +1,7 @@
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Features from "./components/Features";
 import AIAdvisory from "./components/AIAdvisory";
 import AgenticTransformation from "./components/AgenticTransformation";
 import Solutions from "./components/Solutions";
@@ -36,6 +37,7 @@ function App() {
             <Header />
             <main id="main-content" role="main">
               <Hero />
+              <Features />
               <AIAdvisory />
               <AgenticTransformation />
               <Solutions />

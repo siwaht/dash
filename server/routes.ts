@@ -1,6 +1,7 @@
 import type { Express } from "express";
 import adminRoutes from "./routes/admin.js";
 import requestRoutes from "./routes/requests.js";
+import { createMcpServer } from "./mcp.js";
 
 export function registerRoutes(app: Express) {
   app.get("/api/health", (_req, res) => {
@@ -19,4 +20,7 @@ export function registerRoutes(app: Express) {
 
   app.use("/api/admin", adminRoutes);
   app.use("/api", requestRoutes);
+
+  // Initialize MCP Server
+  createMcpServer(app);
 }
