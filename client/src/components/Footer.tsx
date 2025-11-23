@@ -22,16 +22,16 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
 
                         <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-8">
                             <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm md:text-base">
-                                <a href="#services" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110">
-                                    Services
+                                <a href="#ai-advisory" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110 min-h-[44px] flex items-center">
+                                    AI Advisory
                                 </a>
-                                <a href="#features" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110">
-                                    Features
+                                <a href="#solutions" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110 min-h-[44px] flex items-center">
+                                    Solutions
                                 </a>
-                                <a href="#ag-ui" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110">
-                                    RAG Data Retrieval
+                                <a href="#industries" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110 min-h-[44px] flex items-center">
+                                    Industries
                                 </a>
-                                <a href="#demo-form" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110">
+                                <a href="#demo-form" className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:text-gradient transition-all duration-500 hover:scale-110 min-h-[44px] flex items-center">
                                     Contact
                                 </a>
                             </div>
@@ -47,7 +47,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
                                     <Linkedin className="w-5 h-5 text-brand-blue-mid group-hover:text-brand-teal-mid soft-glow transition-all duration-300" />
                                 </a>
                                 <a
-                                    href=""
+                                    href="https://www.instagram.com/agenticoslabs"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="card-elegant w-12 h-12 min-w-[48px] min-h-[48px] rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-soft-lg transition-all duration-500 group shadow-soft"

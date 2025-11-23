@@ -1,4 +1,35 @@
 export default function StructuredData() {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Agenticoslabs",
+    "url": "https://agenticoslabs.com",
+    "logo": "https://agenticoslabs.com/logo.png",
+    "description": "Enterprise Agentic AI Platform providing privacy-first, HIPAA & GDPR compliant intelligent automation solutions",
+    "foundingDate": "2024",
+    "slogan": "The Only Agentic AI OS Your Enterprise Will Ever Need",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Sales",
+      "url": "https://agenticoslabs.com/#demo-form",
+      "availableLanguage": ["English"]
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/agenticoslabs",
+      "https://www.instagram.com/agenticoslabs"
+    ],
+    "areaServed": "Worldwide",
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "0",
+        "longitude": "0"
+      },
+      "geoRadius": "20000000"
+    }
+  };
+
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -12,7 +43,11 @@ export default function StructuredData() {
           "name": "Agenticoslabs",
           "url": "https://agenticoslabs.com"
         },
-        "serviceType": "AI Consulting"
+        "serviceType": "AI Consulting",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock"
+        }
       },
       {
         "@type": "Service",
@@ -23,7 +58,11 @@ export default function StructuredData() {
           "name": "Agenticoslabs",
           "url": "https://agenticoslabs.com"
         },
-        "serviceType": "AI Platform"
+        "serviceType": "AI Platform",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock"
+        }
       },
       {
         "@type": "Service",
@@ -34,7 +73,11 @@ export default function StructuredData() {
           "name": "Agenticoslabs",
           "url": "https://agenticoslabs.com"
         },
-        "serviceType": "Workflow Automation"
+        "serviceType": "Workflow Automation",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock"
+        }
       }
     ]
   };
@@ -94,6 +137,10 @@ export default function StructuredData() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
