@@ -24,7 +24,7 @@ export default function Hero() {
 
           <h1 className="scroll-reveal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.35] mb-6 md:mb-8 tracking-tight" style={{ animationDelay: '0.1s' }}>
             <span className="text-gradient block mb-4 sm:mb-6 leading-[1.35] py-2">
-              Next-Gen WhatsApp AI Agents
+              The Only Agentic AI OS
             </span>
             <span className="text-text-light-primary dark:text-text-dark-primary block leading-[1.35] py-2">
               Powered by Evolution API
